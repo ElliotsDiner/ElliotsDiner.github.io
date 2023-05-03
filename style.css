@@ -5,7 +5,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Monsterrat';
+    font-family: 'Monsterrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .background {
@@ -39,11 +39,12 @@
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%;
     max-width: 300px;
-
 }
 
+
 .tile {
-    border: 1px solid white;
+    border: white 1px solid;
+    z-index: 10;
     min-width: 100px;
     min-height: 100px;
     display: flex;
@@ -51,7 +52,8 @@
     align-items: center;
     font-size: 50px;
     cursor: pointer;
-    transition: background-color 2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: all 2s cubic-bezier(0.39, 0.575, 0.565, 1);
+    background-color: #15121b;
 }
 
 .tile:hover {
@@ -62,11 +64,13 @@
 .playerX {
     color: #c3093b;
     user-select: none;
+    cursor: initial;
 }
 
 .playerO {
     color: #5d00ff;
     user-select: none;
+    cursor: initial;
 }
 
 .controls {
@@ -93,4 +97,5 @@
 
 #reset {
     background-color: #FF3860;
+    margin: 0;
 }
