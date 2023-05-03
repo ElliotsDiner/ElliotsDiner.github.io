@@ -7,7 +7,6 @@ window.addEventListener('DOMContentLoaded', () => {
     let board = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'X';
     let isGameActive = true;
-    let hovered = []
 
     const PLAYERX_WON = 'PLAYERX_WON';
     const PLAYERO_WON = 'PLAYERO_WON';
