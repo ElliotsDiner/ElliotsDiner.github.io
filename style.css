@@ -1,5 +1,5 @@
 :root {
-    --player-color: white
+    --player-color: rgb(80, 30, 40);
 }
 
 * {
@@ -51,18 +51,22 @@
     align-items: center;
     font-size: 50px;
     cursor: pointer;
+    transition: background-color 2s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .tile:hover {
-    
+    background-color: var(--player-color);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .playerX {
     color: #c3093b;
+    user-select: none;
 }
 
 .playerO {
     color: #5d00ff;
+    user-select: none;
 }
 
 .controls {

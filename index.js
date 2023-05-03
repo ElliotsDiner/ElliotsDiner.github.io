@@ -88,6 +88,11 @@ window.addEventListener('DOMContentLoaded', () => {
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
         playerDisplay.innerText = currentPlayer;
         playerDisplay.classList.add(`player${currentPlayer}`);
+        if (currentPlayer != 'X') {
+            document.documentElement.style.setProperty("--player-color", "rgb(40, 30, 80)")
+        } else {
+            document.documentElement.style.setProperty("--player-color", "rgb(80, 30, 40)");
+        }
     }
 
     const userAction = (tile, index) => {
